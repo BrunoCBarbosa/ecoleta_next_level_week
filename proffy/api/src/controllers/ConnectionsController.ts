@@ -8,6 +8,14 @@ export default class ConnectionsController{
     const { total } = totalConnections[0];
    
     return res.json({ total });
+
+    // const total = await db('connections')
+
+    // const other = total
+
+    // console.log(other)
+    
+    // return res.json(total)
   }
 
   async create(req: Request, res: Response){
